@@ -44,7 +44,7 @@ div.card img {
   height: 10%;
 }
 
-#callout {
+.callout {
   color: black;
 }
 
@@ -96,6 +96,30 @@ header ul {
 
 img#splash{
   width: 100%;
+}
+
+#testimonials {
+  position: relative;
+  height: 300px;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+.testimonial {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100px;
+  opacity: 0;
+  z-index: 1;
+  transition: 1s;
+}
+
+.showing {
+  opacity: 1;
+  z-index: 2;
 }
 
 footer {
