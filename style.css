@@ -1,4 +1,6 @@
 body {
+  align-items: center;
+  text-align: center;
   font-family: 'Roboto', sans-serif;
   color: white;
   background-image: url("img/background.jpg");
@@ -6,7 +8,9 @@ body {
   background-color: black;
 }
 
-#content { /*Wrapper for the entire site*/
+main { /*Wrapper for the entire site*/
+  margin-left: auto;
+  margin-right: auto;
   border-style: solid;
   border-color: white;
   max-width: 950px;
@@ -19,7 +23,7 @@ body {
   overflow: auto;
 }
 
-#card { /*Material style cards*/
+div.card { /*Material style cards*/
   color: black;
   background-color: white;
   max-width: 25%;
@@ -31,11 +35,11 @@ body {
   overflow: auto;
 }
 
-#card:hover {
+div.card:hover {
   box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
 }
 
-#card img {
+div.card img {
   width: 100%;
   height: 10%;
 }
@@ -48,7 +52,7 @@ body {
   height: auto;
 }
 
-#icon { /*Essentially feature lists*/
+div.icon { /*Essentially feature lists*/
   /*background-color: #f2f2f2;*/
   color: black;
   display: inline-block;
@@ -59,11 +63,11 @@ body {
   transition: 0.5s;
 }
 
-#icon:hover {
+div.icon:hover {
   background-color: #f2f2f2;
 }
 
-#icon p {
+div.icon p {
   color: #737373;
 }
 
@@ -109,7 +113,7 @@ footer li {
   list-style-type: none;
 }
 
-footer column {
+footer section {
   display: inline-block;
   overflow: auto;
   text-align: left;
@@ -125,6 +129,10 @@ footer a {
 
 footer a:hover {
   color: rgb(200,200,200);
+}
+
+footer p#copyright {
+  font-size: 12px;
 }
 
 @media screen and (min-width: 600px) { /*Elements to be completely redesigned in responsive mode*/
@@ -180,13 +188,13 @@ footer a:hover {
     float: none;
   }
 
-  #card {
+  div.card {
     display: block;
     max-width: 100%;
     height: auto;
   }
 
-  #icon {
+  div.icon {
     display: block;
     max-width: 100%;
   }

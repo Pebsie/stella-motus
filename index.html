@@ -1,6 +1,7 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8"/>
   <title>Stella Motus - High value, custom built spaceships</title>
 
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> <!--Grab Roboto-->
@@ -9,9 +10,8 @@
   <script src="//code.jquery.com/jquery-1.10.2.js"></script> <!--Using jQuery-->
 </head>
 <body>
-  <center>
 
-  <div id="content">
+  <main>
 
 
     <header> <!--to be loaded using jQuery-->
@@ -30,22 +30,22 @@
     <hr> <!--Icon section-->
     <div id="callout"><h2>High value, reliable spacecraft</h2></div>
     <div id="icon_section">
-      <div id="icon"><img src="img/cogwheel.png"><h2>Precision Engineered</h2><p>Our in-house mechanics custom build every order by hand so quality and reliability is always assured.</div>
-      <div id="icon"><img src="img/warranty.png"><h2>10,000 Lightyear Warranty</h2><p>As one of the leading suppliers of commercial spacecraft we offer a 10,000 lightyear warranty on ALL orders.</div>
-      <div id="icon"><img src="img/tick.png"><h2>Federal Space Commission Certified</h2><p>We work to the latest standards set in place by the FSC so that you can be sure your vehicle is legal.</div>
+      <div class="icon"><img src="img/cogwheel.png" alt="Cogwheel"><h2>Precision Engineered</h2><p>Our in-house mechanics custom build every order by hand so quality and reliability is always assured.</div>
+      <div class="icon"><img src="img/warranty.png" alt="Spaceship taking off"><h2>10,000 Lightyear Warranty</h2><p>As one of the leading suppliers of commercial spacecraft we offer a 10,000 lightyear warranty on ALL orders.</div>
+      <div class="icon"><img src="img/tick.png" alt="FCC Certification"><h2>Federal Space Commission Certified</h2><p>We work to the latest standards set in place by the FSC so that you can be sure your vehicle is legal.</div>
     </div>
 
     <hr> <!--Recent blog posts section-->
     <h2 style="color:black;">Blog</h2>
     <div id="post-container">
-      <div id="card"><img src="img/placeholder-header.jpg"><h3>8 reasons you NEED a new FTL drive!</h3><p>It can often feel like your cruiser is starting to drag as FTL charge times increase and subsequent power consumption leaves you desperate for a little more juice. It's time to upgrade your FTL drive!</p><p><a href="#">Read More...</a></p></div>
-      <div id="card"><img src="img/slime-head.jpg"><h3>FSC issues "slime creature" warning</h3><p>The FSC (Federal Space Comission) has issued a warning to capsuleers following recent attacks on terrestrial spacecraft from "creature made entirely of slime".</p><p><a href="#">Read More...</a></p></div>
-      <div id="card"><img src="img/placeholder-cargo.jpg"><h3>S4X Scanner TESTED</h3><p>The folks at Scan'em Technologies were kind enough to send us their new S4X scanner. So how does it fare against the world-renowned S3X series? We investigate...</p><p><a href="#">Read More...</a></p></div>
+      <div class="card"><img src="img/placeholder-header.jpg" alt="FTL drive"><h3>8 reasons you NEED a new FTL drive!</h3><p>It can often feel like your cruiser is starting to drag as FTL charge times increase and subsequent power consumption leaves you desperate for a little more juice. It's time to upgrade your FTL drive!</p><p><a href="#">Read More...</a></p></div>
+      <div class="card"><img src="img/slime-head.jpg" alt="Slime creature"><h3>FSC issues "slime creature" warning</h3><p>The FSC (Federal Space Comission) has issued a warning to capsuleers following recent attacks on terrestrial spacecraft from "creature made entirely of slime".</p><p><a href="#">Read More...</a></p></div>
+      <div class="card"><img src="img/placeholder-cargo.jpg" alt="Scanner usage"><h3>S4X Scanner TESTED</h3><p>The folks at Scan'em Technologies were kind enough to send us their new S4X scanner. So how does it fare against the world-renowned S3X series? We investigate...</p><p><a href="#">Read More...</a></p></div>
     </div>
 
     <hr> <!--Footer section, to be imported using jQuery-->
     <footer>
-      <column>
+      <section>
         <h2>Contact</h2>
         <ul>
           <li>Office 764b</li>
@@ -54,8 +54,8 @@
           <li>New Eden</li>
           <li>#stellamotus</li>
         </ul>
-      </column>
-      <column>
+      </section>
+      <section>
         <h2>Social</h2>
         <ul>
           <li><a href='#'>Facebook</a></li>
@@ -64,9 +64,9 @@
           <li><a href='#'>Email</a></li>
           <li><a href='#'>Usenet</a></li>
         </ul>
-      </column>
-      <small><p>Site design by <a href='http://peb.si'>Thomas Lock</a><br>Computer Science at <a href='http://lincoln.ac.uk'>University of Lincoln</a></p></small>
+      </section>
+      <p id="copyright">Site design by <a href='http://peb.si'>Thomas Lock</a><br>Computer Science at <a href='http://lincoln.ac.uk'>University of Lincoln</a></p>
     </footer>
-  </div>
+  </main>
 </body>
 </html>
