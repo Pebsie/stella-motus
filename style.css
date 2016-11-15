@@ -18,7 +18,7 @@ main { /*Wrapper for the entire site*/
 }
 
 #post-container {
-  height: auto;
+  height: 100%;
   width: 100%;
   overflow: auto;
 }
@@ -32,7 +32,7 @@ div.card { /*Material style cards*/
   margin: 10px;
   transition: 0.3s;
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-  overflow: auto;
+  overflow: inherit;
   vertical-align: top;
 }
 
