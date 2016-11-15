@@ -119,6 +119,7 @@ footer section {
   text-align: left;
   margin-left: 20px;
   margin-right: 20px;
+  vertical-align: top;
 }
 
 footer a {
@@ -133,6 +134,10 @@ footer a:hover {
 
 footer p#copyright {
   font-size: 12px;
+}
+
+footer ul#sitemap li {
+  display: inline;
 }
 
 @media screen and (min-width: 600px) { /*Elements to be completely redesigned in responsive mode*/
