@@ -33,6 +33,7 @@ div.card { /*Material style cards*/
   transition: 0.3s;
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   overflow: auto;
+  vertical-align: top;
 }
 
 div.card:hover {
@@ -61,6 +62,7 @@ div.icon { /*Essentially feature lists*/
   padding: 5px;
   /*box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);*/
   transition: 0.5s;
+  vertical-align: top;
 }
 
 div.icon:hover {
@@ -100,7 +102,7 @@ img#splash{
 
 #testimonials {
   position: relative;
-  height: 300px;
+  height: 48px;
   padding: 0px;
   margin: 0px;
   list-style-type: none;
