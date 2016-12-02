@@ -17,13 +17,20 @@ main { /*Wrapper for the entire site*/
   background-color: white;
 }
 
+hr {
+  max-width: 80%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(0,0,25);
+}
+
 #post-container {
   height: 100%;
   width: 100%;
   overflow: auto;
 }
 
-div.card { /*Material style cards*/
+.card { /*Material style cards*/
   color: black;
   background-color: white;
   max-width: 25%;
@@ -36,26 +43,28 @@ div.card { /*Material style cards*/
   vertical-align: top;
 }
 
-div.card:hover {
+.card:hover {
   box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
 }
 
-div.card img {
+.card img {
   width: 100%;
   height: 10%;
 }
 
 .callout {
+  height: auto;
   color: black;
   margin: auto auto;
   max-width: 80%;
+  overflow: auto;
 }
 
 #icon_section { /*To prevent the icon div creating scrollbars to fit content*/
   height: auto;
 }
 
-div.icon { /*Essentially feature lists*/
+.icon { /*Essentially feature lists*/
   /*background-color: #f2f2f2;*/
   color: black;
   display: inline-block;
@@ -67,11 +76,11 @@ div.icon { /*Essentially feature lists*/
   vertical-align: top;
 }
 
-div.icon:hover {
+.icon:hover {
   background-color: #f2f2f2;
 }
 
-div.icon p {
+.icon p {
   color: #737373;
 }
 
@@ -104,7 +113,8 @@ img#splash{
 
 #testimonials {
   position: relative;
-  height: 48px;
+  height: 78px;
+  overflow: auto;
   padding: 0px;
   margin: 0px;
   list-style-type: none;
@@ -115,7 +125,7 @@ img#splash{
   left: 0px;
   top: 0px;
   width: 100%;
-  height: 100px;
+  height: auto;
   opacity: 0;
   z-index: 1;
   transition: 1s;
@@ -148,6 +158,7 @@ article.fullwidth img {
   max-height: 50%;
   max-width: 40%;
   float: right;
+  margin-top: 20px;
 }
 
 article.fullwidth#company {
@@ -260,13 +271,13 @@ footer ul#sitemap li {
     float: none;
   }
 
-  div.card {
+  .card {
     display: block;
     max-width: 100%;
     height: auto;
   }
 
-  div.icon {
+  .icon {
     display: block;
     max-width: 100%;
   }
