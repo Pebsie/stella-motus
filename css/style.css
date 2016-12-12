@@ -154,11 +154,13 @@ article.fullwidth p {
   margin-left: 15%;
 }
 
-article.fullwidth img {
+article.fullwidth i#icon {
+  font-size: 100px;
   max-height: 50%;
   max-width: 40%;
   float: right;
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-right: 20%;
 }
 
 article.fullwidth#company {
@@ -312,5 +314,10 @@ footer ul#sitemap li {
 
   header li a:hover {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  }
+
+  article.fullwidth i#icon {
+    font-size: 100px;
+    display: block;
   }
 }
