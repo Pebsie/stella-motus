@@ -186,6 +186,10 @@ article.fullwidth#delivery {
   width: 100%;
 }
 
+#blog p {
+  padding: 40px;
+}
+
 footer {
   background-color: rgb(20,20,20);
   color: rgb(100,100,100);
