@@ -142,6 +142,13 @@ function onShipChanged() {
   utilImage.src = utilImages[utilIndex];
   scanImage.src = scanImages[scanIndex];
   trailImage.src = trailImages[trailIndex];
+
+  document.getElementById("bodyCost").innerHTML = bodyText[bodyIndex] + ": " + bodyCost[bodyIndex];
+  document.getElementById("utilCost").innerHTML = utilText[utilIndex] + ": " + utilCost[utilIndex];
+  document.getElementById("scanCost").innerHTML = scanText[scanIndex] + ": " + scanCost[scanIndex];
+  document.getElementById("trailCost").innerHTML = trailText[trailIndex] + ": " + trailCost[trailIndex];
+
+  document.getElementById("totalcost").innerHTML = (bodyCost[bodyIndex] + utilCost[utilIndex] + scanCost[scanIndex] + trailCost[trailIndex]) + " ISK";
 }
 
 function saveSelection() {
@@ -156,4 +163,6 @@ function loadSelection() {
   utilIndex = localStorage.getItem("chosenUtil");
   scanIndex = localStorage.getItem("chosenScan");
   trailIndex = localStorage.getItem("chosenTrail");
+
+  onShipChanged();
 }
