@@ -8,7 +8,8 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> <!--Grab Roboto-->
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Website is responsive-->
-  </head>
+  <script src="js/order.js"></script>
+</head>
 <body>
   <main>
     <!--header here-->
@@ -23,6 +24,29 @@
         </ul>
       </nav>
     </header>
+
+    <div class="container">
+      <div class="ship">
+        <img id="bodyImg" src="img/ship/cruise.png">
+      </div>
+      <div class="ship">
+        <img id="utilImg" src="img/ship/miner.png">
+      </div>
+      <div class="ship">
+        <img id="scanImg" src="img/ship/scan1.png">
+      </div>
+      <div class="ship">
+        <img id="trailImg" src="img/ship/orange.png">
+      </div>
+    </div>
+    <button onclick="onBodyChange(+1)">Next Body</button>
+    <button onclick="onBodyChange(-1)">Previous Body</button><br>
+    <button onclick="onUtilChange(+1)">Next Utility</button>
+    <button onclick="onUtilChange(-1)">Previous Utility</button><br>
+    <button onclick="onScanChange(+1)">Next Scanner</button>
+    <button onclick="onScanChange(-1)">Previous Scanner</button><br>
+    <button onclick="onTrailChange(+1)">Next Trail Colour</button>
+    <button onclick="onTrailChange(-1)">Previous Trail Colour</button><br>
 
 
 

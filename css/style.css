@@ -192,6 +192,24 @@ article.fullwidth#delivery {
   padding: 40px;
 }
 
+.container {
+  align: center;
+  margin-left: auto 0;
+  margin-right: auto 0;
+  position: relative;
+  width: 256px;
+  height: 256px;
+}
+
+.ship {
+  top: 80px;
+  left: 340px;
+  position: absolute;
+  width: 256px;
+  height: 32px;
+}
+
+
 footer {
   background-color: rgb(20,20,20);
   color: rgb(100,100,100);
